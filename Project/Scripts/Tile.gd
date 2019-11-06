@@ -2,7 +2,7 @@ extends StaticBody2D
 
 var yellow = preload("res://Assets/tileYellow_01.png")
 var pink = preload("res://Assets/tilePink_01.png")
-var orange = preload("res://Assets/tileOrange_01.png")
+var orange = preload("res://Assets/tileOrange_02.png")
 var green = preload("res://Assets/tileGreen_01.png")
 var black = preload("res://Assets/tileBlack_01.png")
 
@@ -11,7 +11,7 @@ var score = 10
 
 func _ready():
    if get_parent().name == "Yellow Tiles":
-       sprite.set_texture(gray)
+       sprite.set_texture(yellow)
    if get_parent().name == "Pink Tiles":
        sprite.set_texture(pink)
        score = 20
